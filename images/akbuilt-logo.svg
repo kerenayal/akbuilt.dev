@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 140">
+  <defs>
+    <style>
+      .accent-mesh { fill: #4f8ef7; }
+      .accent-dark { fill: #2c66c4; }
+      .text-main { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; fill: #ffffff; font-size: 52px; letter-spacing: 2px; }
+      .text-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; fill: #4f8ef7; font-size: 24px; letter-spacing: 11px; }
+    </style>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- Icon mark -->
+    <g transform="translate(0, 20)">
+      <polygon points="0,100 0,30 35,30 35,100" class="accent-mesh"/>
+      <polygon points="35,30 35,0 65,0 65,30" class="accent-dark"/>
+      <polygon points="35,45 35,65 65,65 65,45" class="accent-mesh"/>
+      <polygon points="65,0 100,0 100,35 65,35" class="accent-mesh"/>
+      <polygon points="65,65 100,65 100,100 65,100" class="accent-dark"/>
+    </g>
+    <!-- Wordmark -->
+    <text x="125" y="78" class="text-main">AK</text>
+    <text x="127" y="112" class="text-sub">BUILT</text>
+  </g>
+</svg>

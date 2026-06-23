@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" fill="none" role="img" aria-label="VaadApp" style="direction: ltr">
+  <g transform="translate(50, 5)">
+    <path d="M5 43 L50 6 L95 43" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18 43 L18 88 L82 88 L82 43" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="38" cy="54" r="8.5" fill="#ffffff"/>
+    <path d="M28 79 C28 62 48 62 48 79 Z" fill="#ffffff"/>
+    <circle cx="62" cy="54" r="8.5" fill="#22d3ee"/>
+    <path d="M52 79 C52 62 72 62 72 79 Z" fill="#22d3ee"/>
+  </g>
+  <text x="100" y="132" text-anchor="middle" font-weight="800" font-size="42" font-family="system-ui, -apple-system, sans-serif" letter-spacing="-0.5" direction="ltr" style="unicode-bidi: bidi-override">
+    <tspan fill="#ffffff">Vaad</tspan><tspan fill="#22d3ee">App</tspan>
+  </text>
+</svg>
