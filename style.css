@@ -156,14 +156,14 @@ header {
 }
 
 .card-icon .icon-svg {
-  width: 56px;
-  height: 56px;
+  width: 80px;
+  height: 80px;
 }
 
 .card-icon .icon-app {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
   object-fit: contain;
 }
 
