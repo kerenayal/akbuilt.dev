@@ -281,9 +281,9 @@ nav {
 }
 
 .app-icon {
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 22px;
   overflow: hidden;
   display: flex;
   align-items: center;
