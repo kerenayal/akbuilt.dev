@@ -1,0 +1,254 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --surface: #161616;
+  --border: #2a2a2a;
+  --text: #e8e8e8;
+  --muted: #888;
+  --accent: #4f8ef7;
+  --accent-hover: #6ba3ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── Header ── */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.header-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+.nav-email {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-email:hover {
+  color: var(--accent);
+}
+
+/* ── Hero ── */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  gap: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.4rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── Apps ── */
+.apps {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.apps h2,
+.about h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #444;
+}
+
+.card-icon {
+  font-size: 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon .icon-svg {
+  width: 100px;
+  height: 100px;
+}
+
+.card-icon .icon-app {
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: #1e2a1e;
+  color: #5a9e5a;
+  border: 1px solid #2d4a2d;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  width: fit-content;
+}
+
+/* ── About ── */
+.about {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+
+.about p {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+/* ── Footer ── */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--muted);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 1.25rem;
+  }
+
+  .hero {
+    padding: 4rem 1.25rem;
+  }
+
+  .apps,
+  .about {
+    padding: 3rem 1.25rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -6,65 +6,104 @@
   <meta name="description" content="AK Built — indie apps built with purpose by Ayal Keren." />
   <title>AK Built</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-
-  <!-- SEO & Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://akbuilt.dev/" />
   <meta property="og:title" content="AK Built — Apps built with purpose" />
   <meta property="og:description" content="Independent software by Ayal Keren. Building practical apps that solve real problems." />
   <meta property="og:image" content="https://akbuilt.dev/images/akbuilt-logo.svg" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AK Built — Apps built with purpose" />
-  <meta name="twitter:description" content="Independent software by Ayal Keren. Building practical apps that solve real problems." />
 </head>
 <body>
 
-  <header>
-    <a href="/" class="logo"><img src="images/akbuilt-logo.svg" alt="AK Built" class="header-logo" /></a>
-    <a href="mailto:hello@akbuilt.dev" class="nav-email">hello@akbuilt.dev</a>
-  </header>
+  <!-- Ambient background orbs -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
 
+  <!-- Nav -->
+  <nav>
+    <a href="/" class="logo-link">
+      <img src="images/akbuilt-logo.svg" alt="AK Built" class="header-logo" />
+    </a>
+    <a href="mailto:hello@akbuilt.dev" class="nav-cta">Get in touch</a>
+  </nav>
+
+  <!-- Hero -->
   <section class="hero">
-    <h1>Apps built with purpose.</h1>
-    <p>Independent software by Ayal Keren.</p>
-    <a href="#apps" class="btn">See my apps ↓</a>
+    <div class="hero-badge">Indie Software Studio</div>
+    <h1 class="hero-title">
+      Apps built<br />
+      <span class="gradient-text">with purpose.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Independent software by Ayal Keren.<br />
+      Practical tools designed to make everyday life simpler.
+    </p>
+    <div class="hero-actions">
+      <a href="#apps" class="btn-primary">Explore Apps</a>
+      <a href="mailto:hello@akbuilt.dev" class="btn-ghost">Get in touch →</a>
+    </div>
   </section>
 
+  <!-- Apps -->
   <section class="apps" id="apps">
-    <h2>My Apps</h2>
+    <div class="section-label">Products</div>
+    <h2 class="section-title">Two apps. Real problems solved.</h2>
     <div class="cards">
 
       <div class="card">
-        <div class="card-icon"><img src="images/vaadapp-logo.svg" alt="Vaadapp logo" class="icon-svg" /></div>
+        <div class="card-header">
+          <div class="app-icon">
+            <img src="images/vaadapp-logo.svg" alt="Vaadapp logo" />
+          </div>
+          <span class="card-tag">Web App</span>
+        </div>
         <h3>Vaadapp</h3>
         <p>Building committee and tenant management — streamline communication, maintenance, and fees in one place.</p>
-        <a href="https://vaadapp.app" target="_blank" rel="noopener" class="btn btn-outline">Open App →</a>
+        <div class="card-footer">
+          <a href="https://vaadapp.app" target="_blank" rel="noopener" class="btn-card">Open App <span class="arrow">→</span></a>
+          <span class="card-domain">vaadapp.app</span>
+        </div>
       </div>
 
       <div class="card">
-        <div class="card-icon"><img src="images/carsefet-icon.png" alt="Carsefet logo" class="icon-app" /></div>
+        <div class="card-header">
+          <div class="app-icon app-icon-carsefet">
+            <img src="images/carsefet-icon.png" alt="Carsefet logo" />
+          </div>
+          <span class="card-tag card-tag-soon">Coming Soon</span>
+        </div>
         <h3>Carsefet</h3>
         <p>Track your car's fuel, services, and records in one place. Never lose a receipt or miss a service again.</p>
-        <span class="badge">Coming Soon</span>
+        <div class="card-footer">
+          <span class="coming-soon-text">In development</span>
+          <span class="card-domain">carsefet.app</span>
+        </div>
       </div>
 
     </div>
   </section>
 
+  <!-- About -->
   <section class="about">
-    <h2>About</h2>
-    <p>I'm Ayal, an indie developer building practical apps that solve real problems. Based in Israel.</p>
+    <div class="about-inner">
+      <div class="about-badge">About</div>
+      <h2>Built by one developer,<br /><span class="gradient-text">with intention.</span></h2>
+      <p>I'm Ayal, an indie developer based in Israel. I build practical apps that solve real problems — no fluff, no bloat, just tools that work.</p>
+      <a href="mailto:hello@akbuilt.dev" class="btn-primary">Say hello</a>
+    </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <span>AK Built © 2026</span>
+    <div class="footer-logo">AK Built</div>
     <div class="footer-links">
       <a href="mailto:hello@akbuilt.dev">hello@akbuilt.dev</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>
+    <div class="footer-copy">© 2026 AK Built</div>
   </footer>
 
 </body>
